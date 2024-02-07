@@ -21,7 +21,7 @@
 #define EXT 2
 #define FNC 3
 #define SYM2 4
-#define SETTINGS 5
+#define SETT 5
 
 &mt {
   //quick-tap-ms = <100>;
@@ -92,7 +92,7 @@
 		bindings = <
 				&kp ESC  	&trans 		&kp LC(LG(LEFT))&kp LC(LG(RIGHT)) &trans &kp PG_UP	&kp PG_DN 	&kp HOME 	&kp END 	&kp CAPS
 				&sk LALT 	&sk LGUI  	&sk LSHIFT  &sk LCTRL  	&kp RALT 		&kp LEFT 	&kp DOWN  	&kp UP 		&kp RIGHT   &kp DEL
-        &trans 	&kp LC(Z)  	&kp LC(X) 	&kp LC(C) 	&kp TAB		&kp LC(V)       &kp LC(BSPC) &kp BSPC 	&kp LG(LS(S)) &trans  	&trans 		&mo SETTINGS
+        &kp LGUI &kp LC(Z)  &kp LC(X) 	&kp LC(C) 	&kp TAB		&kp LC(V)       &kp LC(BSPC) &kp BSPC 	&kp LG(LS(S)) &trans  	&trans 		&mo SETT
 										&trans		&trans 		&trans       	&kp ENTER  	&trans 		&trans
 		>;
 		};
@@ -103,7 +103,7 @@
 				&kp F1 		&kp F2 		&kp F3 		&kp F4 		&kp F5          &kp F6 		&kp F7 		&kp F8 		&kp F9 		&kp F10 
 				&sk LALT 	&sk LGUI 	&sk LSHIFT 	&sk LCTRL 	&kp RALT     	&none 		&none 		&none  		&kp F5 	&kp F11
         &trans  &none 		&none 		&none 		&none 		&none			&none 		&none 		&none 		&none 		&kp F12  	&kp F12
-										&none 		&none 		&none           &none 		&none  		&none
+										&none 		&none 		&none           &mo SETT 	&none  		&none
 		>;
 		};
 
@@ -112,8 +112,8 @@
 		bindings = <
 				&none 		&none 		&none 		&none 		&none			&none 		&none 		&none 		&none 		&none 
 				&kp CARET  	&kp DOLLAR 	&kp LBKT 	&kp RBKT 	&kp GRAVE		&none 		&kp SQT 	&kp DQT 	&none 		&none
-	 	&trans	&none &none &kp LT &kp GT&kp TILDE						&none &none &none &none &none &trans
-									 &none &none &none              &none &none  &none
+	 	&trans	&none 		&none 		&kp LT 		&kp GT		&kp TILDE		&none 		&none 		&none 		&none 		&none &trans
+										&none 		&none 		&mo SETT        &none 		&none  		&none
 		>;
 		};
 
