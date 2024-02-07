@@ -55,7 +55,7 @@
 		combo_settings {
 				timeout-ms = <300>;
 				key-positions = <30 31>;
-				bindings = <&mo SETTINGS>;
+				bindings = <&mo SETT>;
 		};
 		combo_fnc {
 			timeout-ms = <300>;
