@@ -70,60 +70,60 @@
         // Base alpha layer
        		default_layer {
 		bindings = <
-				&kp Q		&kp W 		&kp E 		&kp R 		&kp T           &kp Y 		&kp U  		&kp I		&kp O   	&kp P 
-				&kp A 		&kp S 		&kp D 		&kp F 		&kp G           &kp H 		&kp J  		&kp K     	&kp L 		&kp SEMI
-		&kp ESC &kp Z   	&kp X 		&kp C 		&kp V 		&kp B			&kp N 		&kp M  		&kp COMMA 	&kp DOT 	&kp FSLH 	&kp LC(LS(M))
-					  					&mo SYM2  	&mo EXT 	&kp SPACE       &mt LSHIFT BSPC &mo SYM &mo FNC
+		&kp Q		&kp W 		&kp E 		&kp R 		&kp T			&kp Y 		&kp U  		&kp I		&kp O   	&kp P 
+		&kp A 		&kp S 		&kp D 		&kp F 		&kp G			&kp H 		&kp J  		&kp K     	&kp L 		&kp SEMI
+	&kp ESC &kp Z   	&kp X 		&kp C 		&kp V 		&kp B			&kp N 		&kp M  		&kp COMMA 	&kp DOT 	&kp FSLH 	&kp LC(LS(M))
+					  	&mo SYM2  	&mo EXT 	&kp SPACE		&mt LSHIFT BSPC &mo SYM		&mo FNC
 		>;
 		};
 
         // Numbers and high frequency symbols
        		sym_layer {
 		bindings = <
-				&kp N1   	&kp N2    	&kp N3   	&kp N4   	&kp N5			&kp N6    	&kp N7    	&kp N8    	&kp N9    	&kp N0
-				&kp HASH 	&kp PRCNT 	&kp LBRC 	&kp RBRC 	&kp SQT    		&kp PLUS  	&kp MINUS 	&kp EQL   	&kp QMARK 	&kp COLON
-        &kp LGUI &kp EXCL 	&kp AT    	&kp LPAR 	&kp RPAR 	&kp DQT			&kp ASTRK 	&kp AMPS  	&kp UNDER 	&kp BSLH  	&kp PIPE 	&trans
-				    					&trans  	&trans  	&trans   		&trans		&trans 		&trans
+		&kp N1   	&kp N2    	&kp N3   	&kp N4   	&kp N5			&kp N6    	&kp N7    	&kp N8    	&kp N9   	&kp N0
+		&kp HASH 	&kp PRCNT 	&kp LBRC 	&kp RBRC 	&kp SQT 		&kp PLUS  	&kp MINUS 	&kp EQL   	&kp TILDE	&kp COLON
+        &kp LGUI &kp EXCL	&kp AT    	&kp LPAR 	&kp RPAR 	&kp DQT			&kp ASTRK 	&kp AMPS  	&kp UNDER 	&kp BSLH  	&kp PIPE 	&trans
+				    		&trans  	&trans  	&trans   		&trans		&trans 		&trans
 		>;
 		};
 
         // Main modifiers and arrow keys
 		    ext_layer {
 		bindings = <
-				&kp ESC  	&trans 		&kp LC(LG(LEFT))&kp LC(LG(RIGHT)) &trans &kp PG_UP	&kp PG_DN 	&kp HOME 	&kp END 	&kp CAPS
-				&sk LALT 	&sk LGUI  	&sk LSHIFT  &sk LCTRL  	&kp RALT 		&kp LEFT 	&kp DOWN  	&kp UP 		&kp RIGHT   &kp DEL
-        &kp LGUI &kp LC(Z)  &kp LC(X) 	&kp LC(C) 	&kp TAB		&kp LC(V)       &kp LC(BSPC) &kp BSPC 	&kp LG(LS(S)) &trans  	&trans 		&mo SETT
-										&trans		&trans 		&trans       	&kp ENTER  	&trans 		&trans
+		&kp ESC  	&kc tab		&kp LC(LG(LEFT))&kp LC(LG(RIGHT)) &trans		&kp PG_UP	&kp PG_DN 	&kp HOME 	&kp END 	&kp CAPS
+		&sk LALT 	&sk LGUI  	&sk LSHIFT	&sk LCTRL  	&kp RALT 		&kp LEFT 	&kp DOWN  	&kp UP 		&kp RIGHT	&kp DEL
+        &kp LGUI &kp LC(Z)	&kp LC(X) 	&kp LC(C) 	&kp TAB		&kp LC(V)		&kp LC(BSPC)	&kp BSPC 	&kp LG(LS(S))	&trans		&trans 		&mo SETT
+						&trans		&trans 		&trans			&kp ENTER  	&trans 		&trans
 		>;
 		};
 
         // Function keys with modifiers
        		fnc_layer {
 		bindings = <
-				&kp F1 		&kp F2 		&kp F3 		&kp F4 		&kp F5          &kp F6 		&kp F7 		&kp F8 		&kp F9 		&kp F10 
-				&sk LALT 	&sk LGUI 	&sk LSHIFT 	&sk LCTRL 	&kp RALT     	&none 		&none 		&none  		&kp F5 	&kp F11
+		&kp F1 		&kp F2 		&kp F3 		&kp F4 		&kp F5			&kp F6 		&kp F7 		&kp F8 		&kp F9 		&kp F10 
+		&sk LALT 	&sk LGUI 	&sk LSHIFT 	&sk LCTRL 	&kp RALT		&none 		&none 		&none  		&kp F5		&kp F11
         &trans  &none 		&none 		&none 		&none 		&none			&none 		&none 		&none 		&none 		&kp F12  	&kp F12
-										&none 		&none 		&none           &mo SETT 	&none  		&none
+						&none 		&none 		&none			&mo SETT 	&none  		&none
 		>;
 		};
 
         // Low frequency symbols.
        		symbols_2_layer {
 		bindings = <
-				&none 		&none 		&none 		&none 		&none			&none 		&none 		&none 		&none 		&none 
-				&kp CARET  	&kp DOLLAR 	&kp LBKT 	&kp RBKT 	&kp GRAVE		&none 		&kp SQT 	&kp DQT 	&none 		&none
-	 	&trans	&none 		&none 		&kp LT 		&kp GT		&kp TILDE		&none 		&none 		&none 		&none 		&none &trans
-										&none 		&none 		&mo SETT        &none 		&none  		&none
+		&kp GRAVE	&kp TILDE	&none 		&none 		&none			&none 		&none 		&none 		&none 		&none 
+		&kp CARET  	&kp DOLLAR 	&kp LBKT 	&kp RBKT 	&kp GRAVE		&none 		&kp SQT 	&kp DQT 	&none 		&none
+	&trans	&none 		&none 		&kp LT 		&kp GT		&kp TILDE		&none 		&none 		&none 		&none 		&none &trans
+						&none 		&none 		&mo SETT		&none 		&none  		&none
 		>;
 		};
 
         // Used to change the keyboard's settings.
        		settings_layer {
 		bindings = <
-				&bootloader &none 		&none 		&bt BT_CLR 	&bt BT_SEL 0    &bt BT_SEL 3 &none 		&unstick 	&none 		&bootloader 
-				&none 		&none 		&none 		&none      	&bt BT_SEL 1 	&bt BT_SEL 4 &none 		&none 		&none 		&none
-	 	&trans	&none 		&none 		&none 		&none      	&bt BT_SEL 2    &bt BT_SEL 5 &none 		&none 		&none 		&none 		&trans
-          								&trans 		&none 		&none        	&none 		&none  		&trans
+		&bootloader	&none 		&none 		&bt BT_CLR 	&bt BT_SEL 0		&bt BT_SEL 3	&none		&unstick 	&none 		&bootloader
+		&none 		&none 		&none 		&none      	&bt BT_SEL 1		&bt BT_SEL 4	&none		&none 		&none 		&none
+ 	&trans	&none 		&none 		&none 		&none      	&bt BT_SEL 2		&bt BT_SEL 5	&none		&none 		&none 		&none 		&trans
+          					&trans 		&none 		&none			&none 		&none  		&trans
 		>;
 		};
         
